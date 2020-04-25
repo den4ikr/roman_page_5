@@ -1,0 +1,18 @@
+$(document).ready(function(){
+	$(".slider__slider").slick({
+		responsive:[
+			{
+				breakpoint:767,
+				settings:{
+					slidesToShow:1,
+					cneterMode:true,
+					arrows:false,
+				}
+			}	
+		]
+	});
+	$(".header__burger").click(function(event){
+		$(".header__list").toggleClass("active");
+		$(".header__main").toggleClass("active");
+	})
+})
